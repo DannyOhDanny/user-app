@@ -1,0 +1,120 @@
+.card-container {
+  background-color: #2d2747;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: #b3b8cd;
+  padding-top: 30px;
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+  margin: 20px auto;
+  min-height: 300px;
+}
+
+.card__pro {
+  color: #231e39;
+  background-color: #febb0b;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.card__email {
+  word-wrap: break-word;
+}
+.card__image {
+  border: 1px solid #03bfcb;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.card__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__button {
+  background-color: #03bfcb;
+  border: 1px solid #03bfcb;
+  border-radius: 3px;
+  color: #231e39;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+
+.card__button.ghost {
+  background-color: transparent;
+  color: #02899c;
+  padding: 10px 25px;
+}
+
+.card__skills {
+  margin-top: 10px;
+  border-top: 1px solid #2d2747;
+  background-color: #231e39;
+  text-align: left;
+  padding: 15px;
+}
+
+.skills__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills__item {
+  border: 1px solid #2d2747;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 7px 7px 0;
+  padding: 7px;
+}
+.card__button {
+  opacity: 1;
+}
+.card__button:hover {
+  opacity: 0.7;
+  transform: opacity 1s ease-in;
+  cursor: pointer;
+}
+
+.card__button:focus {
+  border: 1px solid #febb0b;
+}
+
+.card__button:active {
+  border: 1px solid #03bfcb;
+}
+
+/* Медиа-запросы для адаптивности */
+@media only screen and (max-width: 1920px) {
+  .card-container {
+    max-width: calc(100% - 20px);
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .card-container {
+    max-width: calc(100% - 30px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .card-container {
+    max-width: calc(100% - 50px);
+  }
+  .card__buttons {
+    flex-direction: column;
+  }
+  .card__button {
+    width: 80%;
+  }
+}
