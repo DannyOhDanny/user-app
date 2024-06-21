@@ -9,9 +9,7 @@
   width: 100%;
   min-height: 300px;
 }
-.todo-container:not(:has(.list-item)) .tooltip {
-  display: none;
-}
+
 ::placeholder {
   background: #2d2747;
   border: none;
