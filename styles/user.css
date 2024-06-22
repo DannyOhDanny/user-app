@@ -22,10 +22,23 @@
   top: 30px;
   left: 30px;
 }
+.card__description {
+  margin-top: 5px;
 
-.card__email {
   word-wrap: break-word;
 }
+
+.card__email {
+  margin-top: 5px;
+  word-wrap: break-word;
+}
+
+.card__telephone {
+  margin-top: 5px;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+}
+
 .card__image {
   border: 1px solid #03bfcb;
   border-radius: 50%;
