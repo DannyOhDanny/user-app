@@ -32,7 +32,8 @@ addTaskBtn.addEventListener('click', function () {
     taskList.appendChild(taskItem);
     taskInput.value = '';
   } else {
-    taskListError.textContent = 'Добавьте задачу или используйте кириллицу ';
+    taskListError.textContent =
+      'Добавьте задачу, используя кириллицу, цифры и знаки препинания';
   }
 });
 

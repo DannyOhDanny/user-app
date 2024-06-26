@@ -1,4 +1,5 @@
 const urlParams = new URLSearchParams(window.location.search);
+
 const userId = urlParams.get('id');
 
 fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
@@ -13,7 +14,6 @@ fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
     const email = document.querySelector('.card__email');
     const description = document.querySelector('.card__description');
     const tel = document.querySelector('.card__telephone');
-    const avatar = document.querySelector('.card__image');
 
     email.textContent = `${user.email}`;
     tel.textContent = `${user.phone}`;
